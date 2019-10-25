@@ -1,28 +1,22 @@
 $(document).ready(function() {
-
-  $("form#Survey").submit(function(event) {
+  $("form#Survey").submit(function() {
     event.preventDefault();
-    var name = $("input#name").val();
-    $(".outputName").text(name);
-
-    var animal = $("input:radio[name=animal]:checked").val();
-    $(".outputAnimal").text(animal);
-
-    var color = $("input:radio[name=color]:checked").val();
-    $(".outputColor").text(color);
-
-    var drink = $("input:radio[name=drink]:checked").val();
-    $(".outputDrink").text(drink);
-
-    var hobby = $("input:radio[name=hobby]:checked").val();
-    $(".outputHobby").text(hobby);
-
-    var flavor = $("input:radio[name=flavor]:checked").val();
-    $(".outputFlavor").text(flavor);
-
-
-
-    $(".results").show();
+    var animal = parseInt($("#input1").val());
+    var color = parseInt($("#input2").val());
+    var drink = parseInt($("#input3").val());
+    var hobby = parseInt($("#input4").val());
+    var flavor = parseInt($("#input5").val());
+    var operator = $("input:radio[name=operator]:checked").val();
+    var result;
+    if (operator === "add") {
+      result = add(number1, number2);
+    } else if (operator === "subtract") {
+      result = subtract(number1, number2);
+    } else if (operator === "multiply") {
+      result = multiply(number1, number2);
+    } else if (operator === "divide") {
+      result = divide(number1, number2);
+    }
+    $("#output").text(result);
   });
-
 });
