@@ -6,7 +6,7 @@
 
 ### Description
 
-_This page is a survey where you can pick a code language to learn based on your preferences._
+_This page is a survey where you can pick a code language to learn based on your preferences. Uses forms and branching._
 
 
 ## Program Setup Instructions
