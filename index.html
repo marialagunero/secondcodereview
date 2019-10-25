@@ -9,8 +9,8 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-<div class="container">
-  <h1>Survey</h1>
+    <div class="container">
+      <h1>Which language to pick?</h1>
 
 
 
@@ -28,14 +28,60 @@
 
 
       <div class="radio">
-        <p>Do you prefer cats or dogs?</p>
+        <p>Which animal do you prefer?</p>
         <label>
-          <input type="radio" name="prefer1" value="animal">
+          <input type="radio" name="animal" value="cat">
           Cat
-          <input type="radio" name="prefer1" value="animal">
+          <input type="radio" name="animal" value="dog">
           Dog
         </label>
         </div>
+
+
+
+
+
+        <div class="radio">
+          <p>Do you prefer the color red or blue?</p>
+          <label>
+            <input type="radio" name="color" value="red">
+            Red
+            <input type="radio" name="color" value="blue">
+            Blue
+          </label>
+          </div>
+
+          <div class="radio">
+            <p>Do you prefer beer or wine?</p>
+            <label>
+              <input type="radio" name="drink" value="beer">
+              Beer
+              <input type="radio" name="drink" value="wine">
+              Wine
+            </label>
+            </div>
+
+            <div class="radio">
+              <p>Surfing or Skiing?</p>
+              <label>
+                <input type="radio" name="hobby" value="surfing">
+                Surfing
+                <input type="radio" name="hobby" value="skiing">
+                Skiing
+              </label>
+              </div>
+
+
+              <div class="radio">
+                <p>Chocolate or Vanilla?</p>
+                <label>
+                  <input type="radio" name="flavor" value="chocolate">
+                  Chocolate
+                  <input type="radio" name="flavor" value="vanilla">
+                  Vanilla
+                </label>
+                </div>
+
 
 
 
@@ -54,9 +100,18 @@
 
     </form>
 
+    <div class="results">
+      <p><span class="outputName"></span>Name</p>
+      <p><span class="outputAnimal"></span>Animal</p>
+      <p><span class="outputColor"></span>Color</p>
+      <p><span class="outputDrink"></span>Drink</p>
+      <p><span class="outputHobby"></span>Hobby</p>
+      <p><span class="outputFlavor"></span>Flavor</p>
+    </div>
+
+
+
   </div>
-
-
 </div>
   </body>
 </html>

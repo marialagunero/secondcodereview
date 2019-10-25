@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+
+.resultsName {
+  display: none;
+  text-align: center;
+
+}
+
+.resultsColor {
+  display: none;
+  text-align: center;
+
+}
+
+.resultsDrink {
+  display: none;
+  text-align: center;
+}
+
+.resultsHobby {
+  display: none;
+  text-align: center;
+
+}
+
+.resultsFlavor {
+  display: none;
+  text-align: center;
+  background-color: blue;
+}
