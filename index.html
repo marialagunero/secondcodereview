@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/script.js"></script>
+    <title>Pick a Language</title>
   </head>
   <body>
     <div class="container">
-      <h1>Which language to pick?Answer these questions to find out!</h1>
+      <h1>Which language to pick?</h1>
+      <p>Answer these questions to find out!</p>
 
 
 
@@ -27,7 +29,7 @@
       </div>
 
 
-      <div class="radio">
+      <div id="animal">
         <p>Which animal do you prefer? Pick one.</p>
         <label>
           <input type="radio" name="animal" value="cat">
@@ -41,7 +43,7 @@
 
 
 
-        <div class="radio">
+        <div id="color">
           <p>Do you prefer the color red or blue? Pick one.</p>
           <label>
             <input type="radio" name="color" value="red">
@@ -51,7 +53,7 @@
           </label>
           </div>
 
-          <div class="radio">
+          <div id="drink">
             <p>Do you prefer beer or wine?</p>
             <label>
               <input type="radio" name="drink" value="beer">
@@ -61,7 +63,7 @@
             </label>
             </div>
 
-            <div class="radio">
+            <div id="hobby">
               <p>Surfing or Skiing?</p>
               <label>
                 <input type="radio" name="hobby" value="surfing">
@@ -72,7 +74,7 @@
               </div>
 
 
-              <div class="radio">
+              <div id="flavor">
                 <p>Chocolate or Vanilla?</p>
                 <label>
                   <input type="radio" name="flavor" value="chocolate">
@@ -109,14 +111,12 @@
       <p><span class="outputFlavor"></span>Flavor</p>
     </div>
 
-    <div class="output">
-      <label for="name">Language:</label>
+
+    <div id ="ruby"><p>Ruby</p>
     </div>
-    <div id ="ruby" class="hidden"><p>Ruby</p>
+    <div id ="javascript"><p>Javascript</p>
     </div>
-    <div id ="javascript" class="hidden"><p>Javascript</p>
-    </div>
-    <div id ="python" class="hidden"><p>Python</p>
+    <div id ="python"><p>Python</p>
     </div>
 
 
